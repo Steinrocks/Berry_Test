@@ -26,6 +26,7 @@
     <configuration>
         <webXml>src\Berry1\WEB-INF\web.xml</webXml>
         <failOnMissingWebXml>true</failOnMissingWebXml>
+        <uniqueVersion>false</uniqueVersion>
     </configuration>
   </plugin>
   </plugins>
