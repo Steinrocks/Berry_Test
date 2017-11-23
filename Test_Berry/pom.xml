@@ -15,7 +15,7 @@
     <repository>
       <id>internal.repo</id>
       <name>Stein Rocky</name>
-      <url>https://experience.jupitercloud.de/nexus</url>
+      <url>https://experience.jupitercloud.de/nexus/content/repositories/releases</url>
     </repository>
   </distributionManagement>
   <dependencies>
