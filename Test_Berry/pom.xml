@@ -11,6 +11,13 @@
     <developerConnection>scm:git:https://github.com/Steinrocks/Berry_Test.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Stein Rocky</name>
+      <url>https://experience.jupitercloud.de/nexus</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
