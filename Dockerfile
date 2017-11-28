@@ -1,5 +1,9 @@
 FROM tomcat
 
+ENV CATALINA_HOME /usr/local/tomcat
+ENV PATH $CATALINA_HOME/bin:$PATH
+WORKDIR $CATALINA_HOME
+
 RUN apt-get update && apt-get install -y elinks nano
 
 RUN elinks https://hotspot.t-mobile.net/wlan/index.do?username=4915111408377@t-mobile.de&password=8a4-8h5-9aq&strHinweis=Zahlungsbedingungen&strAGB=AGB
