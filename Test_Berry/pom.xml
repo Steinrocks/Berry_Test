@@ -20,15 +20,20 @@
   </distributionManagement>
   <build>
   <plugins>
-  <plugin>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>2.4</version>
-    <configuration>
-        <webXml>src\Berry1\WEB-INF\web.xml</webXml>
-        <failOnMissingWebXml>true</failOnMissingWebXml>
-        <uniqueVersion>false</uniqueVersion>
-    </configuration>
-  </plugin>
+    <plugin>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>2.4</version>
+      <configuration>
+          <webXml>src\Berry1\WEB-INF\web.xml</webXml>
+          <failOnMissingWebXml>true</failOnMissingWebXml>
+          <uniqueVersion>false</uniqueVersion>
+          <container>
+               <containerId>tomcat</containerId>
+               <type>installed</type>
+               <home>192.168.188.11</home>
+          </container>
+      </configuration>
+    </plugin>
   </plugins>
   </build>
   <dependencies>
