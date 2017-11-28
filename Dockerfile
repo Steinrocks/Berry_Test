@@ -7,8 +7,8 @@ RUN elinks https://hotspot.t-mobile.net/wlan/index.do?username=4915111408377@t-m
 RUN curl "https://experience.jupitercloud.de/nexus/service/local/artifact/maven/redirect?r=snapshots&g=Berry1&a=fischkudder&e=war&v=LATEST" \
           -o /usr/local/tomcat/webapps/HelloWorld.war
 
-RUN /usr/local/tomcat/shutdown.sh
-RUN /usr/local/tomcat/startup.sh    
+RUN /usr/local/tomcat/bin/shutdown.sh
+RUN /usr/local/tomcat/bin/startup.sh    
 
 VOLUME ["/usr/local/tomcat/webapps"]
 
